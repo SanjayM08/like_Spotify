@@ -1,0 +1,12 @@
+pwd
+rm -rf *
+git clone https://github.com/SanjayM08/run_spotify.git
+ls
+path=$(pwd)
+ls
+cp ./run_spotify/* $path
+ls
+sudo docker images
+sudo docker build . -t sanjaym08/spotify:v1
+sudo docker images
+sudo docker push sanjaym08/spotify:v1
